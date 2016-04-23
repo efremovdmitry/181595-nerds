@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>"Nerds" Каталог</title>
   </head>
   <body>
     <header class="main-header">
@@ -10,10 +10,10 @@
         <a href="#"> <img src="#" alt="logo"> </a>
         <nav>
           <ul>
-            <li> <a href="#"> Студия </a> </li>
-            <li> <a href="#"> Клиенты </a> </li>
-            <li> <a href="#"> Магазин </a> </li>
-            <li> <a href="#"> Контакты </a> </li>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a> </li>
+            <li><a href="#">Магазин</a> </li>
+            <li><a href="#">Контакты</a> </li>
           </ul>
         </nav>
         <div class="user-block">
@@ -21,73 +21,73 @@
         </div>
       </div>
       <div class="welcome">
-        <p>
-          Добро пожаловать в магазин
-          готовых макетов
-        </p>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>   
     <main class="main-content">  
       <aside class="sidebar">
         <form action="url">
-          
           <h2> Стоимость: </h2>
-          <div class="slider"></div>
-          <div class="input">
-            от 
+          <div class="runner-of-price"></div>
+          <div class="value-of-price">
             <label>
+              от
               <input type="text" name="from">
             </label>
-            до
-            <laebel> 
+            <label> 
+              до
               <input type="text" name="before">
-            </laebel>
+            </label>
           </div>
           
           <h2> Сетка: </h2>
           <label>
-            <input type="radio" checked name="grid" value="Адаптивная"> Адаптивная
+            <input type="radio" checked name="grid" value="adaptive"> Адаптивная
           </label>
           <label>
-            <input type="radio" name="grid" value="Фиксированная"> Фиксированная
+            <input type="radio" name="grid" value="fixed"> Фиксированная
           </label>
           <label>
-            <input type="radio" name="grid" value="Резиновая"> Резиновая
+            <input type="radio" name="grid" value="rubber"> Резиновая
           </label>
           
           <h2> Особенности: </h2>
           <label>
-            <input type="checkbox" checked name="Слайдер" value="Слайдер"> Слайдер
+            <input type="checkbox" checked name="slider" value="slider"> Слайдер
           </label>
           <label>
-            <input type="checkbox" name="Блок преимуществ" value="Блок преимуществ"> Блок преимуществ
+            <input type="checkbox" name="block-of-advantages" value="block-of-advantages"> Блок преимуществ
           </label>
           <label>
-            <input type="checkbox" checked name="Новости" value="Новости"> Новости
+            <input type="checkbox" checked name="news" value="news"> Новости
           </label>
           <label>
-            <input type="checkbox" name="Галерея" value="Галерея"> Галерея
+            <input type="checkbox" name="gallery" value="gallery"> Галерея
           </label>
           <label>
-            <input type="checkbox" name="Корзина" value="Корзина"> Корзина
+            <input type="checkbox" name="basket" value="basket"> Корзина
           </label>
           
           <input type="submit" value="Показать"> 
         </form>
-        
       </aside>
       <div class="main-container">
-        <div class="categories">
+      <div class="sort">
           <span> Сортировать: </span>
           <ul>
-            <li> <a href="#"> По цене </a> </li>
-            <li> <a href="#"> По типу </a> </li>
-            <li> <a href="#"> По функционалу </a> </li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
           </ul> 
+          <div class="triangles">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
-        <div class="catalog">
-          
-          <article>
+      <div class="catalog">
+        <article class="card-product">
             <div class="switches">
               <ul>
                 <li></li>
@@ -95,37 +95,140 @@
                 <li></li>
               </ul>
             </div>
+            <figure class="sketch">
             <img src="#" alt="sketch">
+            </figure>
             <div class="description">
-              <h2> Aviator </h2>
+              <h2>Aviator</h2>
               <p>
                 Одностраничный макет
                 с авторским дизайном
               </p>
-              <a href="#" class="btn-buy"> 8000р. </a>
+              <a href="#" class="btn-buy">8000р.</a>
             </div>
           </article>
-          
-        </div>
+        <article class="card-product">
+            <div class="switches">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+              <figure class="sketch">
+                <img src="#" alt="sketch">
+              </figure>
+              <div class="description">
+                <h2>Sunset</h2>
+                <p>
+                  Интернет-магазин
+                  с личным кабинетом
+                </p>
+                <a href="#" class="btn-buy">10000р.</a>
+                </div>
+          </article>
+        <article class="card-product">
+            <div class="switches">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <figure class="sketch">
+              <img src="#" alt="sketch">
+            </figure>
+            <div class="description">
+              <h2>Forte</h2>
+              <p>
+                Отличный макет
+                для личного блога
+              </p>
+              <a href="#" class="btn-buy">5000р.</a>
+              </div>
+          </article>
+        <article class="card-product">
+            <div class="switches">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <figure class="sketch">
+              <img src="#" alt="sketch">
+            </figure>
+            <div class="description">
+              <h2>Modern organic thai</h2>
+              <p>
+                Сайт для ресторана
+                быстрого питания
+              </p>
+              <a href="#" class="btn-buy">12000р.</a>
+              </div>
+          </article>
+        <article class="card-product">
+            <div class="switches">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <figure class="sketch">
+              <img src="#" alt="sketch">
+            </figure>
+            <div class="description">
+              <h2>Avenue</h2>
+              <p>
+                Макет для блога
+                о путешествиях
+              </p>
+              <a href="#" class="btn-buy">8000р.</a>
+              </div>
+          </article>
+        <article class="card-product">
+            <div class="switches">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <figure class="sketch">
+              <img src="#" alt="sketch">
+            </figure>
+            <div class="description">
+              <h2>Dovetail</h2>
+              <p>
+                Интернет-магазин
+                с галереей товаров
+              </p>
+              <a href="#" class="btn-buy">14000р.</a>
+              </div>
+          </article>
       </div>
-      <nav class="page-number">
+      </div>
+      <div class="pagination">
         <ul>
           <li class="active"> <a href="#"> 1 </a> </li>
           <li> <a href="#"> 2 </a> </li>
           <li> <a href="#"> 3 </a> </li>
           <li> <a href="#"> Следующая </a> </li>
         </ul>
-      </nav>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="map">
         <img src="#" alt="map">
-      </div>
-      <div class="on-the-map">
-        <h2> Nerds design studio </h2>
-        <p> 191186, Санкт-Петербург
-            ул. Б.Конюшенная, д. 19/8 </p>
-        <p> +7(812)275-75-75 </p>
+        <div class="contacts">
+          <h2>Nerds design studio</h2>
+          <p> 
+            191186, Санкт-Петербург
+            ул. Б.Конюшенная, д. 19/8 
+          </p>
+          <p> +7(812)275-75-75 </p>
+        </div>
       </div>
       <div class="footer-container">
         <div class="footer-social">
@@ -133,7 +236,7 @@
           <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
           <a class="social-btn social-btn-inst" href="#"> Инстаграм </a>
         </div>
-        <div class="text">
+        <div class="footer-slogan">
           <span> Давайте дружить, это выгодно! </span>
           <p> Скидка 10% для друзей из социальных сетей. </p>
         </div>
