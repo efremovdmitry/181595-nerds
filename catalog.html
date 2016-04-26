@@ -8,25 +8,25 @@
   <body>
     <header class="main-header">
       <div class="navigation">
-        <a href="#"> <img src="#" alt="logo"> </a>
+        <a class="navigation-logo" href="#"> <img src="#" alt="logo"> </a>
         <nav>
           <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a> </li>
-            <li><a href="#">Магазин</a> </li>
-            <li><a href="#">Контакты</a> </li>
+            <li><a class="navigation-link" href="#">Студия</a></li>
+            <li><a class="navigation-link" href="#">Клиенты</a> </li>
+            <li><a class="navigation-link" href="#">Магазин</a> </li>
+            <li><a class="navigation-link" href="#">Контакты</a> </li>
           </ul>
         </nav>
         <div class="user-block">
           <a class="basket" href="#"> Корзина </a>
         </div>
       </div>
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
+      <h1 class="welcome-paragraph">Добро пожаловать в магазин готовых макетов</h1>
     </header>   
     <main class="main-content">  
       <aside class="sidebar">
         <form action="url">
-          <h2> Стоимость: </h2>
+          <h2 class="sidebar-heading"> Стоимость: </h2>
           <div class="runner-of-price"></div>
           <div class="value-of-price">
             <label>
@@ -39,7 +39,7 @@
             </label>
           </div>
           
-          <h2> Сетка: </h2>
+          <h2 class="sidebar-heading"> Сетка: </h2>
           <label>
             <input type="radio" checked name="grid" value="adaptive"> Адаптивная
           </label>
@@ -50,7 +50,7 @@
             <input type="radio" name="grid" value="rubber"> Резиновая
           </label>
           
-          <h2> Особенности: </h2>
+          <h2 class="sidebar-heading"> Особенности: </h2>
           <label>
             <input type="checkbox" checked name="slider" value="slider"> Слайдер
           </label>
@@ -67,18 +67,18 @@
             <input type="checkbox" name="basket" value="basket"> Корзина
           </label>
           
-          <input type="submit" value="Показать"> 
+          <input class="show-btn" type="submit" value="Показать"> 
         </form>
       </aside>
       <div class="main-container">
       <div class="sort">
-          <span> Сортировать: </span>
+          <span class="sort-title"> Сортировать: </span>
           <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
-            <li><a href="#" class="triangles-1"></a></li>
-            <li><a href="#" class="triangles-2"></a></li>
+            <li><a class="sort-link" href="#">По цене</a></li>
+            <li><a class="sort-link" href="#">По типу</a></li>
+            <li><a class="sort-link" href="#">По функционалу</a></li>
+            <li><a href="#" class="triangles-down"></a></li>
+            <li><a href="#" class="triangles-up"></a></li>
           </ul>
           </div>
         </div>
@@ -217,13 +217,13 @@
       <div class="map">
         <img src="#" alt="map">
         <div class="contacts">
-          <h2>Nerds design studio</h2>
-          <p> 
+          <h2 class="contacts-heading">Nerds design studio</h2>
+          <p class="contacts-paragraph"> 
             191186, Санкт-Петербург
             ул. Б.Конюшенная, д. 19/8 
           </p>
-          <p> +7(812)275-75-75 </p>
-          <a class="btn-write" href="#">Напишите нам</a>
+          <p class="contacts-paragraph"> +7(812)275-75-75 </p>
+          <a class="contacts-btn" href="#">Напишите нам</a>
         </div>
       </div>
       <div class="footer-container">
@@ -233,8 +233,8 @@
           <a class="social-btn social-btn-inst" href="#"> Инстаграм </a>
         </div>
         <div class="footer-slogan">
-          <span> Давайте дружить, это выгодно! </span>
-          <p> Скидка 10% для друзей из социальных сетей. </p>
+          <span class="slogan"> Давайте дружить, это выгодно! </span>
+          <p class="footer-paragraph"> Скидка 10% для друзей из социальных сетей. </p>
         </div>
       </div>
     </footer>

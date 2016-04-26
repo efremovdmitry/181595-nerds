@@ -1,0 +1,237 @@
+.navigation-link {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  color: black;
+}
+
+.basket {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  color: black;
+}
+
+.slider-heading {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: black;
+}
+
+.slider-paragraph {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.slider-btn-info {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+}
+
+.service-item b {
+  font-family: "Roboto" "Tahoma" sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+
+.service-item p {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.btn-order {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+}
+
+.about-us-left b {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: black;
+}
+
+/* 
+в этом блоке возникли вопросы,
+как наиболее рационально задать однаковые стили для этих двух классов (about-us-left ,  about-us-right)?
+Для заголовка и списка с левой и с правой сторон
+нужно прописать одинаковый стиль.
+параграф в левой части не помешает для общего стиля двух классов?
+Плюс заголовки имеют свойство text-transform  */
+
+.about-us-left p,h2,ul {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.about-us-left h2 {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.about-us-right h2,ul {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.since {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 8.56px;  
+  color: black;
+} 
+
+.contacts-heading {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+}
+/* В слове NERD используется символ E с двумя точками,
+где его брать? */
+
+.contacts-paragraph {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.contacts-btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+}
+
+.slogan {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: black;
+}
+
+.footer-paragraph {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.welcome-paragraph {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 48px;
+  color: black;
+}
+
+.sidebar-heading {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: black;
+}
+
+.sidebar label {
+  font-family: Roboto Medium;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+/* Есть сомнения правильно ли я указал объект для стилизации
+Ведь в лэебл входит не только текст */
+
+.show-btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+}
+
+.sort-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+}
+
+.sort-link {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+}
+
+.description h2 {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 8.56px;
+  color: black;
+} 
+
+.description p {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.btn-buy {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 8.56px;
+  color: white;
+}
+
+.pagination a {
+  font-family: Roboto Medium;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
