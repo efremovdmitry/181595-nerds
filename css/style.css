@@ -1,5 +1,149 @@
-.navigation-link {
+.outline {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 3px dashed black;
+}
+/* Объясни пожалуста про это свойство  подробнее
+Мы применяем его, чтобы было проще ориентироваться при построении сетки, но я не могу понять нужно ли учитывать значения отступов и рамок для этого свойства, определяя размеры блоков. 
+Также появляются проблемы, когда нужно оттолкнуть вниз блок.
+маргин-боттом тут уже задан
+*/
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation {
+  width: 900px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width:  140px;
+  height: 60px;
+  float: left;
+}
+/* Прописывать размеры в css для картинок обязательно ? ведь они есть html */
+
+nav {
+  width: 500px;
+  float: left;
+  margin-left: 80px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.user-block {
+  width: 100px;
+  float: right;
+  margin-left: 60px;
+}
+
+.slider {
+  width: 900px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 480px;
+  float: left;
+  margin-top: 75px;
+  margin-bottom: 80px;
+}
+/*  
+  Тут проблема с пэддингами от аутлайна.
+хочу что-бы блок слайд был прижат к родителю,
+но появляются эти отступы.
+  И вопрос про маргинны,
+они сдесь нужны ? или это уже позиционирование?
+*/
+
+.slider-switches ul li {
+  display: inline-block;
+}
+
+.services {
+  width: 900px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.service-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+/*  */
+
+.service-item:last-child {
+  
+}
+/*
+Почему-то не могу прописать псевдокласс для .service-item
+Ставлю двоеточие после класса, и текст становиться белым, типа ошибка синтаксиса ..  Не могу понять в чём дело..
+Пока временно добавил отдельный класс последнему элементу, чтобы убрать маргины */
+
+.last-child {
+  margin-right: 0px; 
+}
+
+/*
+  И тут отключаю outline - всё встаёт на места
+Опять же не пойму как оттолкнуть вниз следующую секцию с контентом.
+*/
+
+.about-us {
+  width: 900px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.about-us-left {
+  width: 620px;
+  float: left;
+}
+
+
+.about-us-right {
+  width: 240px;
+  float: right;
+}
+
+/*таже ситуация с оутлайнами
+когда их отключаю всё встаёт так как нужно*/
+
+.examples {
+  width: 880px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.examples a {
+  width: 240px;
+
+  display: inline-block;
+}
+/*
+хочу сделать эти картинки инлайн-блоками
+проблема в том, что не знаю, как им правильно задать размеры.
+на макете они все разной ширины .
+если делать width:240px отступы справа будут отличаться, или можно каждому задать свою ширину ? 
+не понимаю, как их выравнивать..
+*/
+
+body {
   font-family: "Roboto", "Tahoma", sans-serif;
+}
+
+.navigation-link {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
@@ -7,7 +151,6 @@
 }
 
 .basket {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
@@ -15,21 +158,18 @@
 }
 
 .slider-heading {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: black;
 }
 
 .slider-paragraph {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
 
 .slider-btn-info {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
@@ -37,7 +177,6 @@
 }
 
 .service-item b {
-  font-family: "Roboto" "Tahoma" sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -45,14 +184,12 @@
 }
 
 .service-item p {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 22px;
   color: #283136;
 }
 
 .btn-order {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
@@ -60,7 +197,6 @@
 }
 
 .about-us-left b {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: black;
@@ -75,14 +211,12 @@
 Плюс заголовки имеют свойство text-transform  */
 
 .about-us-left p,h2,ul {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
 
 .about-us-left h2 {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 22px;
@@ -90,14 +224,12 @@
 }
 
 .about-us-right h2,ul {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
 
 .since {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 8.56px;  
@@ -105,24 +237,19 @@
 } 
 
 .contacts-heading {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
   color: black;
 }
-/* В слове NERD используется символ E с двумя точками,
-где его брать? */
 
 .contacts-paragraph {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #666666;
 }
 
 .contacts-btn {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
@@ -130,21 +257,18 @@
 }
 
 .slogan {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: black;
 }
 
 .footer-paragraph {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
 
 .welcome-paragraph {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 48px;
@@ -152,7 +276,6 @@
 }
 
 .sidebar-heading {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 30px;
@@ -160,16 +283,12 @@
 }
 
 .sidebar label {
-  font-family: Roboto Medium;
   font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
-/* Есть сомнения правильно ли я указал объект для стилизации
-Ведь в лэебл входит не только текст */
 
 .show-btn {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 18px;
@@ -177,7 +296,6 @@
 }
 
 .sort-title {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
@@ -185,7 +303,6 @@
 }
 
 .sort-link {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
@@ -193,7 +310,6 @@
 }
 
 .description h2 {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 8.56px;
@@ -201,14 +317,12 @@
 } 
 
 .description p {
-  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #283136;
 }
 
 .btn-buy {
-  font-family: "Roboto", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 8.56px;
@@ -216,22 +330,8 @@
 }
 
 .pagination a {
-  font-family: Roboto Medium;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
   color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
