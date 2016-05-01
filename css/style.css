@@ -1,13 +1,6 @@
 .outline {
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 3px dashed black;
+  outline: 3px dashed black;
 }
-/* Объясни пожалуста про это свойство  подробнее
-Мы применяем его, чтобы было проще ориентироваться при построении сетки, но я не могу понять нужно ли учитывать значения отступов и рамок для этого свойства, определяя размеры блоков. 
-Также появляются проблемы, когда нужно оттолкнуть вниз блок.
-маргин-боттом тут уже задан
-*/
 
 .clearfix {
   content: "";
@@ -15,8 +8,13 @@
   clear: both;
 }
 
+.main-header {
+  width: 880px;
+  margin: auto;
+}
+
 .navigation {
-  width: 900px;
+  width: 880px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -26,7 +24,6 @@
   height: 60px;
   float: left;
 }
-/* Прописывать размеры в css для картинок обязательно ? ведь они есть html */
 
 nav {
   width: 500px;
@@ -46,7 +43,7 @@ nav li {
 }
 
 .slider {
-  width: 900px;
+  width: 880px;
   padding: 0px 10px;
   margin: 0 auto;
 }
@@ -54,23 +51,30 @@ nav li {
 .slide {
   width: 480px;
   float: left;
-  margin-top: 75px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
-/*  
-  Тут проблема с пэддингами от аутлайна.
-хочу что-бы блок слайд был прижат к родителю,
-но появляются эти отступы.
-  И вопрос про маргинны,
-они сдесь нужны ? или это уже позиционирование?
+
+/*
+Нужно оттолкнуть slide от верхней навигации и 
+нижнего контента.
+Правильно сделал? 
 */
 
 .slider-switches ul li {
   display: inline-block;
 }
 
+.welcome-paragraph {
+  width: 880px;
+  margin: auto;
+  padding: 0px 10px;
+  padding-top: 93px;
+  padding-bottom: 75px;
+}
+
 .services {
-  width: 900px;
+  width: 880px;
   padding: 0px 10px;
   margin: 0 auto;
 }
@@ -79,29 +83,21 @@ nav li {
   float: left;
   width: 240px;
   margin-right: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-
-/*  */
 
 .service-item:last-child {
-  
-}
-/*
-Почему-то не могу прописать псевдокласс для .service-item
-Ставлю двоеточие после класса, и текст становиться белым, типа ошибка синтаксиса ..  Не могу понять в чём дело..
-Пока временно добавил отдельный класс последнему элементу, чтобы убрать маргины */
-
-.last-child {
-  margin-right: 0px; 
+    margin-right: 0px; 
 }
 
-/*
-  И тут отключаю outline - всё встаёт на места
-Опять же не пойму как оттолкнуть вниз следующую секцию с контентом.
+/* 
+Та же ситуация, 
+тот же вопрос
 */
 
 .about-us {
-  width: 900px;
+  width: 880px;
   padding: 0px 10px;
   margin: 0 auto;
 }
@@ -109,16 +105,22 @@ nav li {
 .about-us-left {
   width: 620px;
   float: left;
+  margin-top: 75px;
+  margin-bottom: 73px;
 }
 
 
 .about-us-right {
   width: 240px;
   float: right;
+  margin-top: 75px;
+  margin-bottom: 73px;
 }
 
-/*таже ситуация с оутлайнами
-когда их отключаю всё встаёт так как нужно*/
+.logo {
+  width: 187px;
+  height: 75px;
+}
 
 .examples {
   width: 880px;
@@ -127,17 +129,87 @@ nav li {
 }
 
 .examples a {
-  width: 240px;
-
   display: inline-block;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.htmlacademy-logo {
+  margin-left: 120px;
+  margin-right: 124px;
 }
 /*
-хочу сделать эти картинки инлайн-блоками
-проблема в том, что не знаю, как им правильно задать размеры.
-на макете они все разной ширины .
-если делать width:240px отступы справа будут отличаться, или можно каждому задать свою ширину ? 
-не понимаю, как их выравнивать..
+  Исправил так как ты сказал,
+теперь изображения - это ссылки 
+а для второй установлены маргины.
+  Только не понимаю где нужно дабавить отспуты, чтобы
+всё вместе сместилось вправо и встало по центру..
 */
+
+.main-content {
+  width: 880px;
+  margin: auto;
+  padding: 0px 10px;
+}
+/*
+Не пойму почему у меня main-content смещён влево
+ширина задана, маргин авто  стоит
+*/
+
+.sidebar {
+  width: 240px;
+  float: left;
+}
+
+.main-container {
+  width: 560px;
+  float: right;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+
+.pagination {
+  width: 285px;
+  clear: both;
+  margin-bottom: 80px;
+}
+
+.map {
+  width: 1200px;
+  height: 417px;
+  margin: auto;
+}
+
+.map-img {
+  width: 1200px;
+}
+/*
+  Изображение карты получается вытянутым 
+хотя указаны реальные её размеры 
+*/
+
+.contacts {
+  width: 250px;
+  height: 240px;
+  float: left;
+}
+
+.footer-container {
+  width: 880px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.footer-social {
+  width: 240px;
+  float: left;
+}
+
+.footer-slogan {
+  width: 580px;
+  float: right;
+  margin-left: 60px;
+}
 
 body {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -202,15 +274,14 @@ body {
   color: black;
 }
 
-/* 
-в этом блоке возникли вопросы,
-как наиболее рационально задать однаковые стили для этих двух классов (about-us-left ,  about-us-right)?
-Для заголовка и списка с левой и с правой сторон
-нужно прописать одинаковый стиль.
-параграф в левой части не помешает для общего стиля двух классов?
-Плюс заголовки имеют свойство text-transform  */
 
-.about-us-left p,h2,ul {
+.about-us-left p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.list-style {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
@@ -218,12 +289,6 @@ body {
 
 .about-us-left h2 {
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136;
-}
-
-.about-us-right h2,ul {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
