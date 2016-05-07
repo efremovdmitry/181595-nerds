@@ -13,25 +13,37 @@
   padding: 0px 10px;
   padding-top: 27px;
   margin: auto;
+  
+  background-color: #eeeeee;
 }
 
 .navigation-logo {
   width:  140px;
   height: 60px;
   float: left;
-  margin-right: 183px;
+  margin-right: 180px;
 }
 
 nav {
   width: 395px;
   float: left;
-  margin-right:0px;
+  margin-right: 60px;
 }
-
 
 nav a {
   color: black;
   text-decoration: none;
+  padding-right: 45px;
+}
+
+/*
+nav ul li a:last-child {
+  padding-right: 0px;
+}
+*/
+
+.navigation a:hover {
+  color: red;
 }
 
 nav ul {
@@ -47,7 +59,6 @@ nav ul {
 nav li {
   display: inline-block;
   vertical-align: top;
-  padding-right: 43px;
   
   text-transform: uppercase;
   font-size: 14px;
@@ -55,13 +66,10 @@ nav li {
   color: black;
 }
 
-nav li:last-child {
-  padding-right: 0px;
-}
-
 .user-block {
   width: 100px;
   float: right;
+  padding-top: 36px;
 }
 
 .slide {
@@ -125,10 +133,12 @@ nav li:last-child {
 
 .examples a {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .examples {
-  padding: 0px 12px;
+  font-size: 0;
+  padding: 0px 21px 0px 12px;
 }
 
 .examples a:last-child {
@@ -139,17 +149,6 @@ nav li:last-child {
 .htmlacademy-logo {
   margin-left: 120px;
   margin-right: 120px;
-}
-
-.map {
-  position: relative;
-}
-
-.contacts {
-  width: 250px;
-  position: absolute;
-  left: 50%;
-  z-index: 1;
 }
 
 .sidebar {
@@ -165,11 +164,17 @@ nav li:last-child {
   margin-top: 82px;
 }
 
+.catalog {
+  vertical-align: top;
+  font-size: 0;
+}
+
 .card-product {
   width: 240px;
   display: inline-block;
   position: relative;
-  margin-right: 70px;
+  margin-right: 80px;
+  margin-bottom: 80px;
 }
 
 .card-product:nth-child(2n) {
@@ -184,6 +189,7 @@ nav li:last-child {
   display: inline-block;
   width: 304px;
   margin: 0px;
+  margin-bottom: 26px;
 }
 
 .description {
@@ -207,21 +213,26 @@ nav li:last-child {
   display: inline-block;
 }
 
+.main-footer {
+  width: 880px;
+  margin: auto;
+  padding: 0px 10px;
+  position: relative;
+}
+
 .map {
   width: 1200px;
   height: 784px;
   margin: auto;
 }
 
-.map-img {
-  width: 1200px;
-  height: 784px;
-}
-
-.footer-container {
-  width: 880px;
+.contacts {
+  width: 250px;
+  position: absolute;
   margin: auto;
-  padding: 80px 10px;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .footer-social {
