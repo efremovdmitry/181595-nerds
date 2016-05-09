@@ -9,12 +9,14 @@
 }
 
 .main-header {
+  background-color: #eeeeee;
+}
+
+.navigation {
   width: 880px;
   padding: 0px 10px;
   padding-top: 27px;
   margin: auto;
-  
-  background-color: #eeeeee;
 }
 
 .navigation-logo {
@@ -72,6 +74,12 @@ nav li {
   padding-top: 36px;
 }
 
+.slider {
+  width: 880px;
+  padding: 0px 10px;
+  margin: auto;
+}
+
 .slide {
   width: 480px;
   float: left;
@@ -87,16 +95,16 @@ nav li {
    margin: 0px;
 }
 
-.welcome-paragraph {
-  margin: 0px;
-  padding-top: 74px;
-  padding-bottom: 93px;
-}
-
-.main-content {
+/*.main-content {
   width: 880px;
   margin: auto;
   padding: 0px 10px;
+}*/
+
+.services {
+  width: 880px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 .service-item {
@@ -112,6 +120,9 @@ nav li {
 }
 
 .about-us {
+  width: 880px;
+  padding: 0px 10px;
+  margin: auto;
   padding-top: 60px;
   padding-bottom: 75px;
 }
@@ -131,14 +142,16 @@ nav li {
   height: 75px;
 }
 
+.examples {
+  width: 880px;
+  margin: auto;
+  padding: 0 10px;
+  font-size: 0
+}
+
 .examples a {
   display: inline-block;
   vertical-align: middle;
-}
-
-.examples {
-  font-size: 0;
-  padding: 0px 21px 0px 12px;
 }
 
 .examples a:last-child {
@@ -151,13 +164,28 @@ nav li {
   margin-right: 120px;
 }
 
+/* Каталог */
+.welcome-paragraph {
+  width: 880px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 74px;
+  padding-bottom: 93px;
+}
+
+.main-container {
+  width: 880px;
+  padding: 0 10px;
+  margin: auto;
+}
+
 .sidebar {
   width: 240px;
   float: left;
   margin-top: 82px;
 }
 
-.main-container {
+.card-product-container {
   width: 560px;
   float: right;
   margin-left: 80px;
@@ -201,11 +229,12 @@ nav li {
   margin-left: 0px;
 }
 
-.switches li{
+.switches ul {
   display: inline-block;
 }
 
 .pagination {
+  margin-bottom: 80px;
   width: 285px;
 }
 
@@ -213,11 +242,15 @@ nav li {
   display: inline-block;
 }
 
+/* footer */
 .main-footer {
+  position: relative;
+}
+
+.footer-container {
   width: 880px;
   margin: auto;
   padding: 0px 10px;
-  position: relative;
 }
 
 .map {
@@ -229,10 +262,8 @@ nav li {
 .contacts {
   width: 250px;
   position: absolute;
-  margin: auto;
   top: 0;
-  left: 0;
-  z-index: 1;
+  left: 50%;
 }
 
 .footer-social {
@@ -247,7 +278,6 @@ nav li {
 }
 
 body {
-  min-width: 900px;
   font-family: "Roboto", "Tahoma", sans-serif;
 }
 
