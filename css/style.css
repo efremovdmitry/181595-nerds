@@ -8,6 +8,7 @@
   clear: both;
 }
 
+/* header */
 .main-header {
   background-color: #eeeeee;
 }
@@ -21,31 +22,24 @@
 
 .navigation-logo {
   width:  140px;
-  height: 60px;
+  height: 56px;
   float: left;
   margin-right: 180px;
 }
 
 nav {
-  width: 395px;
+  width: 400px;
   float: left;
   margin-right: 60px;
 }
 
-nav a {
+.navigation-link {
   color: black;
   text-decoration: none;
-  padding-right: 45px;
 }
 
-/*
-nav ul li a:last-child {
-  padding-right: 0px;
-}
-*/
-
-.navigation a:hover {
-  color: red;
+.navigation-link:hover {
+  color: #fb565a;
 }
 
 nav ul {
@@ -54,13 +48,13 @@ nav ul {
   list-style: none;
   
   font-size: 0px;
-  
-  padding-top: 36px;
+  padding-top: 26px;
 }
 
 nav li {
   display: inline-block;
   vertical-align: top;
+  padding-right: 45px;
   
   text-transform: uppercase;
   font-size: 14px;
@@ -68,13 +62,33 @@ nav li {
   color: black;
 }
 
+nav li:last-child {
+  padding-right: 0;
+}
+
 .user-block {
-  width: 100px;
+  max-width: 100px;
   float: right;
-  padding-top: 36px;
+  padding-top: 24px;
+}
+
+.basket {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  vertical-align: top;
+}
+
+.basket:hover {
+  color: #fb565a;
 }
 
 .slider {
+  
   width: 880px;
   padding: 0px 10px;
   margin: auto;
@@ -95,12 +109,7 @@ nav li {
    margin: 0px;
 }
 
-/*.main-content {
-  width: 880px;
-  margin: auto;
-  padding: 0px 10px;
-}*/
-
+/* Индекс */
 .services {
   width: 880px;
   margin: auto;
@@ -142,11 +151,18 @@ nav li {
   height: 75px;
 }
 
+/*.examples {
+  width: 880px;
+  margin: auto;
+  padding: 0 10px;
+  font-size: 0;
+}*/
+
 .examples {
   width: 880px;
   margin: auto;
   padding: 0 10px;
-  font-size: 0
+  font-size: 0;
 }
 
 .examples a {
@@ -159,9 +175,13 @@ nav li {
   margin-bottom: 35px;
 }
 
+.examples a:first-child {
+  margin-left: 12px;
+}
+
 .htmlacademy-logo {
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 121px;
+  margin-right: 123px;
 }
 
 /* Каталог */
@@ -243,27 +263,29 @@ nav li {
 }
 
 /* footer */
-.main-footer {
+.map {
+  width: auto;
+  height: 416px;
   position: relative;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.contacts {
+  width: 250px;
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-440px);
 }
 
 .footer-container {
   width: 880px;
   margin: auto;
   padding: 0px 10px;
-}
-
-.map {
-  width: 1200px;
-  height: 784px;
-  margin: auto;
-}
-
-.contacts {
-  width: 250px;
-  position: absolute;
-  top: 0;
-  left: 50%;
 }
 
 .footer-social {
