@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>"Nerds" Главная</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="navigation clearfix outline">
-        <a class="navigation-logo" href="#"> <img src="img/logo-header.png" width="140" height="56" alt="logo"> </a>
+        <a class="navigation-logo" href="#"><img src="img/logo-header.png" width="140" height="56" alt="logo"></a>
         <nav>
           <ul>
             <li><a class="navigation-link" href="#">Студия</a></li>
@@ -19,19 +20,27 @@
           </ul>
         </nav>
         <div class="user-block">
-        <a class="basket" href="#">Корзина</a>
-      </div>
+          <a class="basket" href="#"><span class="icon-basket"></span>Корзина</a>
+        </div>
       </div>
       <div class="slider outline clearfix">
-        <div class="slide slide-1 outline">
-          <h1 class="slider-heading"> Долго, дорого, скрупулезно. </h1>
-          <p class="slider-paragraph">
-            Математически выверенный дизайн
-            для вашего сайта или мобильного приложения.
-          </p>
-          <a class="slider-btn-info" href="#"> Узнать больше </a>
+        <div class="slider-switches">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
         </div>
-        <!--<div class="slide slide-2">
+        <div class="slide">
+          <div class="slide-text">
+            <h1 class="slider-heading"> Долго, дорого, скрупулезно. </h1>
+            <p class="slider-paragraph">
+              Математически выверенный дизайн
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="slider-btn-info" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
           <h1 class="slider-heading"> Любите ли вы математику, как любим её мы? </h1>
           <p class="slider-paragraph">
             Нашим дизайнерам мы удаляем нейроны, ответственные
@@ -39,43 +48,39 @@
           </p>
           <a class="slider-btn-info" href="#"> Узнать больше </a>
           </div>
-        <div class="slide slide-3">
+          </div>
+        <div class="slide">
+          <div class="slide-text">
           <h1 class="slider-heading"> Только наркотики, только хардкор! </h1>
           <p class="slider-paragraph">
             Все дизайнерские решения в нашей компании принимаются
             только под воздействием качественных галлюциногенов
           </p>
           <a class="slider-btn-info" href="#"> Узнать больше </a>
-        </div> -->
-        <div class="slider-switches">
-        <ul>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-        </ul>
+          </div>
         </div>
       </div>
     </header>
     <main class="main-content">
-      <div class="services outline clearfix">
-        <div class="service-item outline">
-          <img src="img/service1.jpg" width="240" height="124" alt="web-sites">
+      <div class="services clearfix">
+        <div class="service-item">
+          <img class="service-img" src="img/service1.jpg" width="240" height="124" alt="web-sites">
           <b> Веб-сайты </b>
           <p> Мир никогда не будет прежним
               после того как увидит ваш сайт!
           </p>
           <a class="btn-order btn-red" href="#">Заказать</a>
         </div>
-        <div class="service-item outline">
-          <img src="img/service2.jpg" width="240" height="124" alt="apps">
+        <div class="service-item">
+          <img class="service-img" src="img/service2.jpg" width="240" height="124" alt="apps">
           <b> Приложения </b>
           <p> Покорите топ-10 приложений
               в AppStore и Google Play
           </p>
           <a class="btn-order btn-green" href="#">Заказать</a>
         </div>
-        <div class="service-item outline">
-          <img src="img/service3.jpg" width="240" height="124" alt="presents">
+        <div class="service-item">
+          <img class="service-img" src="img/service3.jpg" width="240" height="124" alt="presents">
           <b> Презентации </b>
           <p> Вы даже не подозреваете
               насколько вы изумительны!
@@ -83,7 +88,7 @@
           <a class="btn-order btn-yellow" href="#">Заказать</a>
         </div>
       </div>
-      <div class="about-us outline clearfix">
+      <div class="about-us clearfix">
         <section class="about-us-left outline">
           <b>
             Мы - маленькая, но гордая 
@@ -93,8 +98,8 @@
             Исповедуем принципы манимализма и чистоты. Ставим математический
             расчёт выше креатива. Работаем не покладая рук как роботы.
           </p>
-          <h2 class="list-style"> Выполняем заказы на разработку: </h2>
-          <ul class="list-style">
+          <h2 class="list-title"> Выполняем заказы на разработку: </h2>
+          <ul class="list">
             <li> Веб-сайтов любой сложности </li>
             <li> Мобильных приложений для iOS и Android </li>
             <li> Слайдшоу и видео для корпоративных презентаций </li>
@@ -104,38 +109,40 @@
           <figure class="logo">
           <img src="img/logo-main.png" width="187" height="75" alt="logo">
           </figure>
+        <div class="since-container">
           <span class="since"> since 2004 </span>
-          <h2 class="list-style">Мы работаем:</h2>
-          <ul class="list-style">
+        </div>
+          <h2 class="list-title">Мы работаем:</h2>
+          <ul class="list">
             <li> С самоотдачей 146% </li>
             <li> Соблюдая сроки на 100% </li>
             <li> По предоплате 50% </li>
           </ul>
         </div>
       </div>
-      <div class="examples outline">  
-        <a href="#"> <img src="img/glukhanko.png" alt="glukhanko"> </a>
-        <a class="htmlacademy-logo" href="#"> <img src="img/html%20academy.png" alt="htmlacademy"> </a>
-        <a href="#"> <img src="img/borodinski.png" alt="borodinski"> </a>
+      <div class="examples">  
+        <a href="#"><img src="img/glukhanko.png" alt="glukhanko"></a>
+        <a class="htmlacademy-logo" href="#"><img src="img/html%20academy.png" alt="htmlacademy"></a>
+        <a href="#"><img src="img/borodinski.png" alt="borodinski"></a>
       </div>
     </main>
     <footer class="main-footer">
       <div class="map">
-        <div class="contacts outline">
+        <div class="contacts">
         <h2 class="contacts-heading">Nёrds design studio</h2>
         <p class="contacts-paragraph"> 
            191186, Санкт-Петербург
            ул. Б.Конюшенная, д. 19/8 
         </p>
-        <p class="contacts-paragraph"> +7(812)275-75-75 </p>
+        <p class="contacts-tel"> тел.+7(812)275-75-75 </p>
         <a class="contacts-btn" href="#">Напишите нам</a>
       </div>
       </div>
       <div class="footer-container outline clearfix">
         <div class="footer-social outline">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn" href="#">vk<span class="icon-vk"></span></a>
+          <a class="social-btn facebook" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#"><span class="icon-instagramm"></span></a>
         </div>
         <div class="footer-slogan outline">
           <span class="slogan"> Давайте дружить, это выгодно! </span>
